@@ -1,0 +1,486 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondo {
+    background-image: url("https://wallpaperaccess.com/full/826919.jpg");
+    background-color: rgb(0, 81, 242);
+    background-size: cover;         /* Hace que la imagen cubra todo el fondo */
+    background-position: center;     /* Centra la imagen */
+    background-repeat: no-repeat;    /* Evita que la imagen se repita */
+    background-attachment: fixed;    /* Fija la imagen en su posición */
+    height: 100vh;                  /* Ajusta la altura al 100% de la pantalla */
+    width: 100%;                    /* Ajusta el ancho al 100% del contenedor */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #009df8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;                   /* Usa Flexbox para alinear los elementos */
+    flex-direction: row;            /* Alinea los elementos en fila */
+    align-items: center;            /* Centra verticalmente los elementos */
+    padding: 1em 0;                 /* Espacio vertical */
+}
+
+.logo {
+    max-width: 100px;               /* Ajusta el ancho máximo del ícono */
+    max-height: 100px;
+    height: auto;                   /* Mantiene la proporción de la imagen */
+    margin-right: 30px;             /* Espacio a la derecha del ícono */
+    margin-left: 60px;              /* Espacio a la izquierda del ícono */
+}
+
+header .text-container {
+    display: flex;                  /* Usa Flexbox para el texto */
+    flex-direction: column;         /* Coloca el texto en columna */
+    margin-left: 330px;              /* Espacio a la izquierda del texto */
+}
+
+header h1{
+    margin: 0;                      /* Elimina el margen para que se alinee mejor */
+    text-align: center; 
+    font-style: italic;            /* Centra el texto */
+    font-size: 42px;
+}
+
+header p {
+    margin: 0;                      /* Elimina el margen para que se alinee mejor */
+    text-align: center;             /* Centra el texto */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-size: 28px;
+}
+
+header, footer {
+    background-color: #009df8;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    background-image: url(https://image.freepik.com/foto-gratis/joven-mujer-cocinando-cocina_1303-22171.jpg);
+    background-repeat: no-repeat;    /* No repetir la imagen */
+    background-size: cover;          /* Cubrir todo el área */
+    background-position: center;     /* Centrar la imagen */
+    margin-bottom: 5px;
+    height: 730px;
+}
+
+.inicio img {
+    width: auto;                    /* Cambia el valor según lo que desees */
+    height: 430px;
+    margin: auto;                   /* Centrar horizontalmente */
+    display: block;                 /* Asegurar que la imagen sea un bloque */
+}
+
+.inicio h3 {
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.intro {
+    margin-left: 10%;
+    margin-right: 15px;
+    background-color: rgba(193, 207, 255, 0.687);
+    border-radius: 10px;
+    color: black;
+}
+
+.intro p {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.cir {
+    width: 430px;
+    height: 430px;
+    margin: auto;
+    margin-left: 10%;
+    display: block;
+    background-color: rgba(4, 134, 181, 0.747);
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px;
+}
+
+.recipes, .inspirational-quotes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    color: #000000;
+    
+    /*background-color: #ffffff;*/
+}
+
+.recipe, .quote {
+    width: 30%;
+    text-align: center;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.frase1 {
+    background-image: url(https://st2.depositphotos.com/1013886/5744/i/950/depositphotos_57444121-stock-photo-healthy-food-background.jpg);
+    background-color: #ffffffe1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 33%;
+    height: 70px;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;                /* Habilita Flexbox */
+    align-items: center;          /* Centra verticalmente el contenido */
+    justify-content: center;      /* Centra horizontalmente el contenido */
+}
+
+.frase1 h2 {
+    color: #ffffff;
+    background-color: #00000096;
+    width: auto;                  /* Ajusta el ancho del fondo del texto */
+    padding: 5px 20px;            /* Agrega espacio interno alrededor del texto */
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: serif;
+    text-align: center;           /* Centra el texto */
+    margin: 0;                    /* Elimina margen */
+}
+
+
+
+.frase2 {
+    background-image: url(https://th.bing.com/th/id/OIP.j2JU8eyvo6S64P95Uh2pqQHaEK?rs=1&pid=ImgDetMain);
+    background-color: #ffffffe1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 33%;
+    height: 70px;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;                /* Habilita Flexbox */
+    align-items: center;          /* Centra verticalmente el contenido */
+    justify-content: center;      /* Centra horizontalmente el contenido */
+}
+
+.frase2 h2{
+    color: #ffffff;
+    background-color: #00000096;
+    width: auto;                  /* Ajusta el ancho del fondo del texto */
+    padding: 5px 20px;            /* Agrega espacio interno alrededor del texto */
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: serif;
+    text-align: center;           /* Centra el texto */
+    margin: 0;
+}
+
+.frase3 {
+    background-image: url(https://i.pinimg.com/originals/50/f1/6f/50f16f897ca4baff5d3863ac738d94e5.jpg);
+    background-color: #ffffffe1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 33%;
+    height: 70px;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;                /* Habilita Flexbox */
+    align-items: center;          /* Centra verticalmente el contenido */
+    justify-content: center;      /* Centra horizontalmente el contenido */
+}
+
+.frase3 h2{
+    color: #ffffff;
+    background-color: #00000096;
+    width: auto;                  /* Ajusta el ancho del fondo del texto */
+    padding: 5px 20px;            /* Agrega espacio interno alrededor del texto */
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: serif;
+    text-align: center;           /* Centra el texto */
+    margin: 0;
+}
+
+/* Estilo general para la sección de contacto */
+.contacto {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:#000000b2;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de la sección */
+.contacto h2, .contacto h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #ffffff;
+}
+
+/* Campos del formulario */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo del botón de envío */
+button {
+    padding: 10px;
+    background-color: #1d00f4; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover {
+    background-color: #a04545; /* Verde más oscuro */
+}
+
+/* Estilo para enlaces de redes sociales */
+.contacto a {
+    display: inline-block;
+    margin: 5px;
+    color: #ffffff; /* Verde */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+.contacto a:hover {
+    color: #fbfffb; /* Verde más oscuro */
+}
+
+/* Estilo para el texto */
+.contacto p {
+    text-align: center;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+
+.cocinas-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #000000b2;
+}
+
+.categoria {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    height: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.categoria img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.categoria h4 {
+    font-size: 1.2em;
+    color: #009df8;
+    margin: 10px 0;
+}
+
+.categoria p {
+    font-size: 0.95em;
+    color: #ffffff;
+    padding: 0 10px 20px;
+}
+
+.contact-form button:hover {
+    background-color: #009df8;
+}
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    background-color:#000000b2;
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    gap: 20px; /* Espacio entre imagen y texto */
+}
+
+.imagen-lado {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.contenido-texto {
+    text-align: justify;
+    font-size: 1.1em;
+    color: #ffffff;
+    line-height: 1.6em;
+}
+
+.contenido-texto h2 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.iframe-container {
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura del contenedor, opcional */
+    margin: 20px; /* Margen alrededor del contenedor, opcional */
+    background-color: #000000b2;
+}
+
+#planes {
+    padding: 40px;
+    background-color: #00000085;
+}
+
+#planes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+    height: 450px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-color: #ffffff69;
+    backdrop-filter: blur(8px);
+}
+
+
+.plan h3 {
+    margin: 10px 0;
+}
+
+.plan p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.plan ul {
+    padding-left: 20px; /* Agrega espacio a la izquierda para las viñetas */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina el margen por defecto */
+    width: 100%; /* Asegúrate de que la lista ocupe el ancho completo */
+    list-style-type: none; /* Elimina las viñetas por defecto */
+}
+
+.plan ul li {
+    margin: 5px 0;
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding-left: 25px; /* Espacio a la izquierda para el símbolo */
+}
+
+.plan ul li::before {
+    content: '✔'; /* Símbolo de palomita */
+    position: absolute; /* Posiciona el símbolo */
+    left: 0; /* Alinea a la izquierda */
+    color: green; /* Cambia el color del símbolo */
+}
+
+
+.plan p.text-decoration-line-through {
+    text-decoration: line-through;
+}
+
+
+footer p {
+    margin: 0.5em 0;
+}
